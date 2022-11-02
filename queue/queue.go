@@ -34,8 +34,8 @@ func (s SliceQueue) Size() int {
 
 func (s SliceQueue) Empty() bool {
 	if len(s) > 0 {
-		return true
+		return false
 	}
 
-	return false
+	return true
 }
