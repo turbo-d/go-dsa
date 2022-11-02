@@ -3,10 +3,12 @@ package main
 import (
 	"fmt"
 	"math/rand"
+
+	"github.com/turbo-d/go-dsa/stack"
 )
 
 func main() {
-	var s SliceStack
+	var s stack.SliceStack
 
 	printStack(s)
 
@@ -19,7 +21,7 @@ func main() {
 	}
 }
 
-func printStack(s SliceStack) {
+func printStack(s stack.SliceStack) {
 	fmt.Println()
 	fmt.Println("Stack:")
 	fmt.Println(s)

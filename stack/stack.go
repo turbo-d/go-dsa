@@ -1,4 +1,4 @@
-package main
+package stack
 
 type Stack interface {
 	Top() int
