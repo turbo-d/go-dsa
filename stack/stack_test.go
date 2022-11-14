@@ -6,11 +6,12 @@ import (
 
 func TestSliceStackTop(t *testing.T) {
 	var s SliceStack
+	s.Push(4)
 	s.Push(3)
 	if top := s.Top(); top != 3 {
 		t.Error("Expected 3, got ", top)
 	}
-	if size := s.Size(); size != 1 {
+	if size := s.Size(); size != 2 {
 		t.Error("Expected a stack size of 1, got ", size)
 	}
 }

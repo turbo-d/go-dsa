@@ -12,7 +12,7 @@ type SliceStack []int
 
 func (s SliceStack) Top() int {
 	if s != nil {
-		return s[0]
+		return s[len(s)-1]
 	}
 
 	return 0
